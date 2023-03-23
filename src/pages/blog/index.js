@@ -12,7 +12,7 @@ export default function Blog() {
         <div className='max-w-[920px] mx-auto  mb-5 pb-10'>
 
           {/* planear futuro */}
-          <div className='text-justify'>
+          <div className='text-justify px-3'>
             <div id='planear-futuro' className='grid sm:grid-cols-2 items-center gap-8 pt-24'>
               <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
               <div className='flex flex-col'>
@@ -39,7 +39,7 @@ export default function Blog() {
           </div>
 
           {/* conocer tu afore */}
-          <div className='text-justify'>
+          <div className='text-justify px-3'>
             <div id='afore' className='grid sm:grid-cols-2 items-center gap-8 pt-24'>
               <div className='flex flex-col'>
                 <h2 className='text-slate-700 text-3xl font-bold py-4'>La importancia de conocer tu AFORE</h2>

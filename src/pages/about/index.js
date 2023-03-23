@@ -33,15 +33,15 @@ export default function About() {
 
                 <p className='text-base'>Hoy en día, Gestoria Peninsular tiene una base de clientes que ha ayudado de más de 7000 personas, las cuales han podido acceder a sus prestaciones sociales o mejorar su situación económica gracias al asesoramiento personalizado y especializado que ofrece la empresa.</p>
               </div>
-              <h2 id='sucursales' className='text-center text-3xl font-bold text-slate-700 pt-24'>Sucursales</h2>
+              <h2 id='sucursales' className='text-center text-3xl font-bold text-slate-700 pt-24 mt-3'>Sucursales</h2>
               <ul className='flex flex-col gap-2 list-disc px-8 text-base mb-3'>
-                <li className='mt-3'>Cuernavaca: Av. Morelos Sur #1000 Col. Centro CP 62000 Tel: 777 123 4567</li>
-                <li>Jiutepec: Calle Emiliano Zapata #50 Col. Civac CP 62500 Tel: 777 234 5678</li>
-                <li>Ocotepec: Carretera Federal Cuernavaca-Tepoztlán Km 10 Col. Lomas de Ocotepec CP 62100 Tel: 777 345 6789</li>
-                <li>Ixtapaluca: Av. Cuauhtémoc #200 Col. San Buenaventura CP 56530 Tel: 55 1234 5678</li>
-                <li>Chetumal: Av. Insurgentes #500 Col. Centro CP 77000 Tel: 983 1234-5678</li>
-                <li>Cozumel: Calle Adolfo Rosado Salas #100 Col. Centro CP77600 Tel:987-123-4567</li>
-                <li>Campeche: Int #106 Av Adolfo Ruiz Cortinez Edificio AH KIM PECH CP24014 Tel:981-227-0643</li>
+                <li className='mt-3'>Cuernavaca: Calle Cuernavaca #47 Col Cuauhnahuac CP 62430 Tel : 981 - 120 - 2069 Cuernavaca, Morelos.</li>
+                <li>Jiutepec: Insurgentes Num 1 Col Centro CP 62550 Edificio Corporativo 3er piso oficina 402 Tel: 777 - 737- 0907 Jiutepec Morelos</li>
+                <li>Ocotepec: Boulevard 17 de abril #118 Ocotepec CP 6220 Tel: 777 - 375 - 8404 Cuernavaca, Morelos.</li>
+                <li>Ixtapaluca: Av. Cuauhtemoc #7 Santana Barbara CP 56538 Tel: 557 - 771 - 0769 Ixtapaluca, México</li>
+                <li>Chetumal: Av. Benito Juarez  entre Alvaro Obregon numero 64 Col. Centro CP. 77000 Tel: 983 - 145 - 9481 Chetumal, Quintana Roo.</li>
+                <li>Cozumel: Calle 65 con 2 norte CP 77620 Tel: 987 - 146 - 6196 Cozumel, Quintana Roo</li>
+                <li>Campeche: Calle 10 #329 Edificio San Ignacio local #4 Colonia Centro CP 24000 Tel: 981 - 133 - 8591 San Francisco de Campeche, Campeche.</li>
               </ul>
 
               <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />

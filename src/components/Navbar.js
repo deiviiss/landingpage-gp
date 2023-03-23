@@ -29,7 +29,7 @@ export default function Navbar() {
   const navigations = [
     { id: 1, label: 'Quiénes somos', href: '', current: true, submenu: [{ id: 1, label: 'Intro', href: '/#intro' }, { id: 2, label: 'Valores', href: '/#metas' }, { id: 3, label: 'Contáctanos', href: '/contact' }] },
     { id: 2, label: 'Qué hacemos', href: '/', current: false, submenu: [{ id: 1, label: 'Trámites', href: '/#services' }] },
-    { id: 3, label: 'Nuestro equipo', href: '/', current: false, submenu: [{ id: 1, label: 'Únete', href: 'https://forms.gle/V1GNxeyvtbwhXrTD6' }, { id: 2, label: 'Sucursales', href: '/about#sucursales' }] }
+    { id: 3, label: 'Nuestro equipo', href: '/', current: false, submenu: [{ id: 1, label: 'Únete', href: 'contact' }, { id: 2, label: 'Sucursales', href: '/about#sucursales' }] }
   ]
 
   const [menuOpen, setMenuOpen] = useState(false)

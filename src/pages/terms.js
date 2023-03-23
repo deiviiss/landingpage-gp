@@ -46,7 +46,7 @@ export default function Terms() {
             </p>
 
             <h2 className='text-slate-700 text-3xl font-bold py-4'>6. Ley aplicable</h2>
-            <p className='pb-4'>Este contrato se regirá e interpretará de acuerdo con las leyes del Estado de Quintana Roo,
+            <p className='pb-4'>Este contrato se regirá e interpretará de acuerdo con las leyes del Estado de Campeche,
               México. Cualquier disputa que surja en relación con este contrato será resuelta exclusivamente por los
               tribunales del Estado de Campeche, México.
             </p>
