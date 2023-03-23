@@ -40,13 +40,13 @@ export default function About() {
                 <li>Chetumal: Av. Benito Juarez  entre Alvaro Obregon numero 64 Col. Centro CP. 77000 <Link href='tel:+529831459481'>Tel: 983 145 9481</Link> Chetumal, Quintana Roo.</li>
                 <li>Cozumel: Calle 65 con 2 norte CP 77620 <Link href='tel:+529871466196'>Tel: 987 146 6196</Link> Cozumel, Quintana Roo.</li>
                 <li className='mt-3'>Cuernavaca: Calle Cuernavaca #47 Col Cuauhnahuac CP 62430 <Link href='tel:+529811202069'>Tel: 981 120 2069</Link> Cuernavaca, Morelos.</li>
-                <li>Ixtapaluca: Av. Cuauhtemoc #7 Santana Barbara CP 56538 <Link href='+525577710769'>557 771 0769</Link> Ixtapaluca, México.</li>
+                <li>Ixtapaluca: Av. Cuauhtemoc #7 Santana Barbara CP 56538 <Link href='tel:+525577710769'>557 771 0769</Link> Ixtapaluca, México.</li>
                 <li>Jiutepec: Insurgentes Num 1 Col Centro CP 62550 Edificio Corporativo 3er piso oficina 402 <Link href='tel:+527777370907'>Tel: 777 737 0907</Link> Jiutepec Morelos.</li>
-                <li>Ocotepec: Boulevard 17 de abril #118 Ocotepec CP 6220 <Link href='tel:+52773758404'>Tel: 777 375 8404</Link> Ocotepec, Morelos.</li>
+                <li>Ocotepec: Boulevard 17 de abril #118 CP 6220 <Link href='tel:+52773758404'>Tel: 777 375 8404</Link> Ocotepec, Morelos.</li>
 
               </ul>
 
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/mapa.jpg' alt='mapa' />
 
               <div className='px-3'>
                 <h2 className='text-center text-3xl font-bold text-slate-700 pt-12 py-4'>Anécdota del fundador</h2>

@@ -13,7 +13,7 @@ export default function Blog() {
 
           {/* planear futuro */}
           <div className='text-justify'>
-            <div id='planear-futuro' className='grid sm:grid-cols-2 items-center gap-8 pt-24'>
+            <div id='planear-retiro' className='grid sm:grid-cols-2 items-center gap-8 pt-24'>
               <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
               <div className='flex flex-col px-3'>
                 <h2 className='text-slate-700 text-3xl font-bold py-4'>La importancia de planear el retiro</h2>

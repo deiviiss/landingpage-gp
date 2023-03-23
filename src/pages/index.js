@@ -64,14 +64,14 @@ export default function Home() {
         <Carousel autoSlide autoSlideinterval={4000}>
           {[
             ...slides.map((slide) => (
-              <Image className='min-w-full min-h-screen object-cover' width={1440} height={800} key={slide.id} src={slide.url} alt='image-carousel' />
+              <Image className='min-w-full max-w-screen max-h-[800px]  object-cover' width={1240} height={800} key={slide.id} src={slide.url} alt='image-carousel' />
             ))
             // <video className='min-h-[500px] max-h-[597px] min-w-full object-cover' key={5} src={demoVideo} autoPlay muted loop />
           ]}
         </Carousel>
 
         {/* INTRO */}
-        <div className='w-full  bg-white text-center  sm:max-w-[1200px]'>
+        <div className='w-full  bg-white text-center sm:max-w-[1200px]'>
 
           <div id='intro' className='px-3 sm:flex py-24'>
             {/* <div className='pt-9 sm:ml-72' /> */}
@@ -93,8 +93,8 @@ export default function Home() {
             {/* col 1 */}
             <div className='relative'>
               <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why1.png' alt='image-why1' />
-              <div className='absolute bottom-6 right-0 left-0 text-left pl-4 text-white uppercase'>
-                <h1 className='mt-4 mb-4 text-sm'>¿Sabes en qué afore estás?</h1>
+              <div className='absolute bottom-6 right-0 left-0 text-left pl-4 text-white uppercase bg-primary bg-opacity-70'>
+                <h1 className='mt-4 mb-4 text-sm'>¿Sabes en qué afore te encuentras?</h1>
                 <h2 className='mt-4 mb-4 text-xl font-semibold'>Nosotros te ayudamos a saberlo</h2>
                 <div className='flex text-xs items-center hover:underline hover:underline-offset-2'>
                   <Link className='text-sm' href='/blog#afore'>Saber más</Link>
@@ -106,9 +106,9 @@ export default function Home() {
             {/* col 2 */}
             <div className='relative'>
               <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
-              <div className='absolute bottom-6 right-0 left-0 text-left pl-4 text-white uppercase'>
-                <h1 className='mt-4 mb-4 text-sm'>Proyectemos tu futuro</h1>
-                <h2 className='mt-4 mb-4 text-xl font-semibold'>En tan solo 5 minutos, comencemos ahora</h2>
+              <div className='absolute bottom-6 right-0 left-0 text-left pl-4 text-white uppercase bg-primary bg-opacity-70'>
+                <h1 className='mt-4 mb-4 text-sm'>Preparar tu futuro</h1>
+                <h2 className='mt-4 mb-4 text-xl font-semibold'>Conoce la importancia ahora</h2>
                 <div className='flex text-xs w-2/3 items-center hover:underline hover:underline-offset-2'>
                   <Link className='text-sm' href='/blog#planear-retiro'>Saber más</Link>
                   <ChevronRight className='ml-4' />
