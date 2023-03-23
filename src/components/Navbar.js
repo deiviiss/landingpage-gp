@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ChevronRight, Menu } from 'react-feather'
@@ -7,7 +8,9 @@ import { ChevronRight, Menu } from 'react-feather'
 import { useState, useEffect } from 'react'
 
 export default function Navbar() {
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +20,10 @@ export default function Navbar() {
       } else {
         setScrolled(false)
       }
+
+      if (menuOpen) {
+        setMenuOpen(false)
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -24,15 +31,17 @@ export default function Navbar() {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [menuOpen])
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [router.asPath])
 
   const navigations = [
     { id: 1, label: 'Quiénes somos', href: '', current: true, submenu: [{ id: 1, label: 'Intro', href: '/#intro' }, { id: 2, label: 'Valores', href: '/#metas' }, { id: 3, label: 'Contáctanos', href: '/contact' }] },
     { id: 2, label: 'Qué hacemos', href: '/', current: false, submenu: [{ id: 1, label: 'Trámites', href: '/#services' }] },
     { id: 3, label: 'Nuestro equipo', href: '/', current: false, submenu: [{ id: 1, label: 'Únete', href: 'contact' }, { id: 2, label: 'Sucursales', href: '/about#sucursales' }] }
   ]
-
-  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <nav className={`fixed top-0 left-0 z-50 w-full h-24 px-3 ${scrolled ? 'bg-white' : 'bg-white'
@@ -52,7 +61,7 @@ export default function Navbar() {
           <ul className='md:flex gap-1'>
             {navigations.map((nav) => (
               <li className='flex items-center group relative' key={nav.id}>
-                <Link href='' className='mx-1 my-4 block'>{nav.label}</Link>
+                <p className='mx-1 my-4 block'>{nav.label}</p>
                 {nav.submenu && nav.submenu.length > 0 && (
                   <ChevronRight className='transform transition duration-300 group-hover:rotate-90 w-4 h-4' />
                 )}
