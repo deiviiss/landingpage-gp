@@ -133,7 +133,7 @@ export default function Home() {
         <div className='w-full z-10 bg-white text-center  sm:max-w-[1200px] sm:mb-6'>
           <div id='services' className='px-3 md:flex md:flex-col py-24'>
 
-            <div className='sm:ml-10 text-left sm:pr-44'>
+            <div className='sm:ml-10 text-left'>
               <p className='text-primary font-bold text-xs py-3'>SERVICIOS</p>
               <h1 className='text-4xl mb-8 font-bold uppercase text-black'>Qué hacemos</h1>
 
