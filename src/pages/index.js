@@ -56,7 +56,7 @@ export default function Home() {
         <meta name='description' content='Gestoría Peninsular es una empresa especializada en brindar servicios de asesoramiento y trámites de pensión y retiro por desempleo. ¡Haz una cita con nosotros y simplifica tus trámites!' />
         <meta name='keywords' content='gestoría, pensión, retiro por desempleo, trámites, asesoramiento' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/logo.png' />
       </Head>
 
       <div id='header' className='max-w-screen flex items-center justify-center flex-col border-b-2 border-slate-200'>
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
 
         {/* GOALS */}
-        <div className='flex w-full pt-16 md:py-20 md:mt-14' id='metas'>
+        <div className='flex w-full pt-16 md:pt-20 md:mt-14' id='metas'>
           <div className='w-full sm:w-1/2 min-h-[550px] max-h-[1440px] bg-acordion bg-no-repeat bg-cover hidden md:block' />
           <div className='flex flex-col sm:w-1/2 my-12 justify-center sm:ml-20'>
             <h2 className='text-3xl mb-8 font-bold uppercase text-slate-700 ml-10'>Metas y Valores</h2>
