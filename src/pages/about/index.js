@@ -36,11 +36,11 @@ export default function About() {
               <h2 id='sucursales' className='text-center text-3xl font-bold text-slate-700 pt-24 mt-3'>Sucursales</h2>
               <ul className='flex flex-col gap-2 list-disc px-8 text-base mb-3'>
                 <li className='mt-3'>Cuernavaca: Calle Cuernavaca #47 Col Cuauhnahuac CP 62430 Tel : 981 - 120 - 2069 Cuernavaca, Morelos.</li>
-                <li>Jiutepec: Insurgentes Num 1 Col Centro CP 62550 Edificio Corporativo 3er piso oficina 402 Tel: 777 - 737- 0907 Jiutepec Morelos</li>
-                <li>Ocotepec: Boulevard 17 de abril #118 Ocotepec CP 6220 Tel: 777 - 375 - 8404 Cuernavaca, Morelos.</li>
-                <li>Ixtapaluca: Av. Cuauhtemoc #7 Santana Barbara CP 56538 Tel: 557 - 771 - 0769 Ixtapaluca, México</li>
+                <li>Jiutepec: Insurgentes Num 1 Col Centro CP 62550 Edificio Corporativo 3er piso oficina 402 Tel: 777 - 737- 0907 Jiutepec Morelos.</li>
+                <li>Ocotepec: Boulevard 17 de abril #118 Ocotepec CP 6220 Tel: 777 - 375 - 8404 Ocotepec, Morelos.</li>
+                <li>Ixtapaluca: Av. Cuauhtemoc #7 Santana Barbara CP 56538 Tel: 557 - 771 - 0769 Ixtapaluca, México.</li>
                 <li>Chetumal: Av. Benito Juarez  entre Alvaro Obregon numero 64 Col. Centro CP. 77000 Tel: 983 - 145 - 9481 Chetumal, Quintana Roo.</li>
-                <li>Cozumel: Calle 65 con 2 norte CP 77620 Tel: 987 - 146 - 6196 Cozumel, Quintana Roo</li>
+                <li>Cozumel: Calle 65 con 2 norte CP 77620 Tel: 987 - 146 - 6196 Cozumel, Quintana Roo.</li>
                 <li>Campeche: Calle 10 #329 Edificio San Ignacio local #4 Colonia Centro CP 24000 Tel: 981 - 133 - 8591 San Francisco de Campeche, Campeche.</li>
               </ul>
 

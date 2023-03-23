@@ -35,7 +35,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className={`fixed top-0 left-0 z-50 w-full h-24 px-3 ${scrolled ? 'bg-white' : 'bg-sky-50'
+    <nav className={`fixed top-0 left-0 z-50 w-full h-24 px-3 ${scrolled ? 'bg-white' : 'bg-white'
       } transition-colors duration-300 ease-in-out border-b-1 shadow-md`}
     >
       <div className='mx-auto flex justify-between items-center max-w-[1170px] h-full'>
