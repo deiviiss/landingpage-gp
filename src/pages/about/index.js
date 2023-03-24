@@ -23,7 +23,7 @@ export default function About() {
                   Desde entonces, hemos logrado ayudar a más de 7000 personas a resolver sus trámites con éxito y satisfacción. Contamos con un equipo de profesionales capacitados y comprometidos con nuestra misión: facilitar la vida de nuestros clientes y defender sus derechos.
                 </p>
               </div>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/historia.jpg' alt='historia' />
             </div>
 
             <div className='flex flex-col py-12 gap-4'>

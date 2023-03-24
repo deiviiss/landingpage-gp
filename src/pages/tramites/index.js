@@ -21,7 +21,7 @@ export default function Tramites() {
                 <p className='text-base'>El trámite de apoyo por desempleo es un beneficio que tienen los trabajadores que cotizan al Instituto Mexicano del Seguro Social (IMSS) y que se encuentran sin empleo formal. Esto significa que no están recibiendo un salario ni aportando al sistema de seguridad social. El beneficio consiste en retirar una parte del saldo acumulado en su cuenta individual de Afore, que se destina a su ahorro para el retiro. La Afore es la Administradora de Fondos para el Retiro, una entidad financiera que administra los recursos de los trabajadores afiliados al IMSS o al ISSSTE (Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado). El ahorro para el retiro es el dinero que se acumula en la cuenta individual durante la vida laboral del trabajador y que se utiliza para obtener una pensión al momento de dejar de trabajar.</p>
 
               </div>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/desempleo.png.webp' alt='desempleo' />
             </div>
 
             <div className='flex flex-col py-12 px-3'>
@@ -41,7 +41,7 @@ export default function Tramites() {
           <div className='text-justify'>
             <div id='pensiones' className='grid sm:grid-cols-2 items-center gap-8 pt-20'>
 
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why1.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/pensiones.webp' alt='pensiones' />
               <div className='flex flex-col py-2 px-3'>
                 <h2 className='text-center text-slate-700 text-3xl font-bold py-4'>Pensiones</h2>
                 <p className='text-base'>El trámite de pensión es el proceso que se realiza para obtener un ingreso mensual por parte de una institución de seguridad social, cuando se cumple con ciertos requisitos de edad y cotización. Existen diferentes tipos de pensión, como la de jubilación, la de cesantía en edad avanzada o la de vejez. Cada tipo de pensión tiene sus propios requisitos y procedimientos, que pueden variar según la ley del seguro social que corresponda al trabajador. Es importante acudir a la institución que otorga la pensión o a la AFORE para recibir orientación y asesoría sobre el trámite más adecuado para cada caso.</p>
@@ -71,7 +71,7 @@ export default function Tramites() {
                 <p className='text-base'>El trámite de negativa de pensión es el proceso que se realiza para obtener la entrega de los recursos de la cuenta individual, cuando no se cumple con los requisitos mínimos que establece la ley del seguro social para pensionarse12. Este trámite puede aplicar para los trabajadores que cotizan bajo el régimen de la ley 73 o la ley 97 del IMSS, o bajo la ley del ISSSTE. Es importante acudir a la AFORE o al instituto que otorga la pensión para recibir orientación y asesoría sobre el trámite más adecuado para cada caso.</p>
 
               </div>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/negativa.jpg' alt='negativa' />
             </div>
 
             <div className='flex flex-col py-12 px-2'>

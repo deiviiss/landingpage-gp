@@ -64,7 +64,7 @@ export default function Home() {
         <Carousel autoSlide autoSlideinterval={4000}>
           {[
             ...slides.map((slide) => (
-              <Image className='min-w-full max-w-screen max-h-[800px] min-h-[800px] object-cover' width={1240} height={800} key={slide.id} src={slide.url} alt='image-carousel' />
+              <Image className='min-w-full max-w-screen max-h-[800px] min-h-[800px] object-cover object-top ' width={1240} height={800} key={slide.id} src={slide.url} alt='carousel' />
             ))
             // <video className='min-h-[500px] max-h-[597px] min-w-full object-cover' key={5} src={demoVideo} autoPlay muted loop />
           ]}
@@ -73,7 +73,7 @@ export default function Home() {
         {/* INTRO */}
         <div className='w-full  bg-white text-center sm:max-w-[1200px]'>
 
-          <div id='intro' className='px-3 sm:flex pt-14 pb-24'>
+          <div id='intro' className='px-3 sm:flex pt-24 pb-24'>
             {/* <div className='pt-9 sm:ml-72' /> */}
             <div className='sm:ml-10 text-left sm:pr-44'>
               <p className='text-primary font-bold text-xs py-3'>INTRO</p>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className='grid sm:grid-cols-2 justify-center items-center'>
             {/* col 1 */}
             <div className='relative'>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why1.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/afore.png' alt='afore' />
               <div className='p-3 absolute bottom-0 right-0 left-0 text-left pl-4 text-white uppercase bg-primary bg-opacity-60'>
                 <h1 className='mt-4 mb-4 text-sm'>¿Sabes en qué afore te encuentras?</h1>
                 <h2 className='mt-4 mb-4 text-xl font-semibold'>Nosotros te ayudamos a saberlo</h2>
@@ -105,7 +105,7 @@ export default function Home() {
 
             {/* col 2 */}
             <div className='relative'>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/preparar-futuro.png' alt='preparar-futuro' />
               <div className='p-3 absolute bottom-0 right-0 left-0 text-left pl-4 text-white uppercase bg-primary bg-opacity-60'>
                 <h1 className='mt-4 mb-4 text-sm'>Preparar tu futuro</h1>
                 <h2 className='mt-4 mb-4 text-xl font-semibold'>Conoce la importancia ahora</h2>

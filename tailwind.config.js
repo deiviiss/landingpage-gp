@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        acordion: "url('/carousel/4.png')"
+        acordion: "url('/retiro-metas.jpg')"
       },
       backgroundColor: theme => ({
         // ...theme('colors'),

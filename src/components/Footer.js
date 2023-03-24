@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Footer() {
   return (
     <>
-      <div className='py-24 bg-primary text-white text-center'>
+      <footer className='py-24 bg-primary text-white text-center'>
         <div className='max-w-[1140px] mx-auto px-2'>
           <div className='grid sm:grid-cols-3 text-sm'>
             <div className='md:mx-10'>
@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
 
       {/* Copyright */}
       <div className='pb-6 bg-primary text-center text-white'>
