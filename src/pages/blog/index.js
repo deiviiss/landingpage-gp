@@ -14,7 +14,7 @@ export default function Blog() {
           {/* planear futuro */}
           <div className='text-justify'>
             <div id='planear-retiro' className='grid sm:grid-cols-2 items-center gap-8 pt-24'>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why2.png' alt='image-why1' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/preparar-futuro.png' alt='preparar-futuro' />
               <div className='flex flex-col px-3'>
                 <h2 className='text-slate-700 text-3xl font-bold py-4 text-center'>La importancia de planear el retiro</h2>
                 <p className='text-base py-2'> Planear el retiro es una parte importante de la vida financiera de cualquier persona. A medida que envejecemos, nuestras necesidades y gastos cambian y es importante tener un plan para asegurarnos de que podamos vivir cómodamente durante nuestros años dorados.</p>
@@ -47,7 +47,7 @@ export default function Blog() {
                 <p className='text-base py-2'>Una de las principales razones por las que es importante conocer tu AFORE es para asegurarte de que estás ahorrando suficiente dinero para tu retiro. Al conocer tu AFORE, puedes verificar cuánto dinero tienes ahorrado y si estás en el camino correcto para alcanzar tus metas financieras para el retiro.</p>
 
               </div>
-              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/why1.png' alt='image-why2' />
+              <Image className='min-h-[410px] max-h-[410px] min-w-full object-cover' width={478} height={410} src='/afore.png' alt='afore' />
             </div>
 
             <div className='flex flex-col px-3'>
