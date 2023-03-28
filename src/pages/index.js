@@ -59,16 +59,16 @@ export default function Home() {
         <link rel='icon' href='/logo.png' />
       </Head>
 
-      <div id='header' className='max-w-screen flex items-center justify-center flex-col border-b-2 border-slate-200'>
+      <Carousel autoSlide autoSlideinterval={4000}>
+        {[
+          ...slides.map((slide) => (
+            <Image className='min-w-full w-full object-cover md:object-contain max-h-[720px] min-h-[300px]' width={1280} height={720} key={slide.id} src={slide.url} alt='carousel' />
+          ))
+          // <video className='min-h-[500px] max-h-[597px] min-w-full object-cover' key={5} src={demoVideo} autoPlay muted loop />
+        ]}
+      </Carousel>
 
-        <Carousel autoSlide autoSlideinterval={4000}>
-          {[
-            ...slides.map((slide) => (
-              <Image className='min-w-full max-w-screen max-h-[800px] min-h-[800px] object-cover object-top ' width={1240} height={800} key={slide.id} src={slide.url} alt='carousel' />
-            ))
-            // <video className='min-h-[500px] max-h-[597px] min-w-full object-cover' key={5} src={demoVideo} autoPlay muted loop />
-          ]}
-        </Carousel>
+      <div className='max-w-screen flex items-center justify-center flex-col border-b-2 border-slate-200'>
 
         {/* INTRO */}
         <div className='w-full  bg-white text-center sm:max-w-[1200px]'>
@@ -79,11 +79,11 @@ export default function Home() {
               <p className='text-primary font-bold text-xs py-3'>INTRO</p>
               <h1 className='text-4xl mb-8 pr-10 font-bold uppercase text-black'>Quiénes somos</h1>
 
-              <p className='px-1'>Gestoría Peninsular es una empresa dedicada a brindar servicios de asesoría y gestión en trámites de apoyo por desempleo, pensiones, negativas y recuperación de saldos. Nuestros fundadores, con amplia experiencia en el sector, establecieron la empresa con la misión de ayudar a las personas en situación de necesidad a obtener los beneficios y recursos que les corresponden.</p>
+              <p className='px-1 text-justify md:text-left'>Gestoría Peninsular es una empresa dedicada a brindar servicios de asesoría y gestión en trámites de apoyo por desempleo, pensiones, negativas y recuperación de saldos. Nuestros fundadores, con amplia experiencia en el sector, establecieron la empresa con la misión de ayudar a las personas en situación de necesidad a obtener los beneficios y recursos que les corresponden.</p>
 
-              <div className='flex uppercase text-xs text-primary font-bold pl-24 sm:pl-1 pt-3 items-center hover:underline hover:underline-offset-2'>
+              <div className='flex uppercase text-xs text-primary font-bold pl-2 sm:pl-1 pt-3 items-center group hover:underline hover:underline-offset-2'>
                 <Link href='/about'>Saber más</Link>
-                <ChevronRight className='ml-4' />
+                <ChevronRight className='m-1 group-hover:scale-150' />
               </div>
             </div>
           </div>
@@ -96,9 +96,9 @@ export default function Home() {
               <div className='p-3 absolute bottom-0 right-0 left-0 text-left pl-4 text-white uppercase bg-primary bg-opacity-60'>
                 <h1 className='mt-4 mb-4 text-sm'>¿Sabes en qué afore te encuentras?</h1>
                 <h2 className='mt-4 mb-4 text-xl font-semibold'>Nosotros te ayudamos a saberlo</h2>
-                <div className='flex text-xs items-center hover:underline hover:underline-offset-2'>
+                <div className='flex text-xs items-center group hover:underline hover:underline-offset-2'>
                   <Link className='text-sm' href='/blog#afore'>Saber más</Link>
-                  <ChevronRight className='ml-4' />
+                  <ChevronRight className='ml-4 group-hover:scale-150' />
                 </div>
               </div>
             </div>
@@ -109,9 +109,9 @@ export default function Home() {
               <div className='p-3 absolute bottom-0 right-0 left-0 text-left pl-4 text-white uppercase bg-primary bg-opacity-60'>
                 <h1 className='mt-4 mb-4 text-sm'>Preparar tu futuro</h1>
                 <h2 className='mt-4 mb-4 text-xl font-semibold'>Conoce la importancia ahora</h2>
-                <div className='flex text-xs w-2/3 items-center hover:underline hover:underline-offset-2'>
+                <div className='flex text-xs items-center group hover:underline hover:underline-offset-2'>
                   <Link className='text-sm' href='/blog#planear-retiro'>Saber más</Link>
-                  <ChevronRight className='ml-4' />
+                  <ChevronRight className='ml-4 group-hover:scale-150' />
                 </div>
               </div>
             </div>
@@ -140,40 +140,40 @@ export default function Home() {
               <p className='text-justify'>Ofrecemos una amplia variedad de servicios de asesoría y gestión, tales como la gestión de trámites y solicitud de beneficios por desempleo, asesoría y gestión en la obtención de pensiones y jubilaciones, apoyo en la obtención de negativas y en la recuperación de saldos. Todos nuestros servicios son realizados por profesionales altamente calificados y con experiencia en la gestión de trámites y beneficios gubernamentales, garantizando un servicio de alta calidad y cumplimiento con los estándares de seguridad y normativas aplicables.</p>
             </div>
 
-            <div className='grid text-left sm:grid-cols-3 mx-6 pt-12 gap-14'>
+            <div className='grid text-left sm:grid-cols-3 mx-6 pt-16 gap-12'>
               <div className='px-2 pt-3 pb-3 mb-8'>
                 <div className='flex flex-col items-center'>
-                  <Image className='min-h-[31px] max-h-[31px] min-w-[31px] max-w-[31px]' width={31} height={31} src='/icons/descargas-icon.png' alt='image-descargas-icon' />
+                  <Image className='min-h-[36px] max-h-[36px] min-w-[36px] max-w-[36px]' width={36} height={36} src='/icons/desempleo-icon.svg' alt='desempleo-icon' />
                   <h1 className='uppercase font-medium pt-2 pb-6'>Desempleo</h1>
                 </div>
-                <p className='pb-3 text-justify'>Es una prestación que te ofrece la AFORE cuando no estás cotizando al IMSS y te permite hacer un retiro parcial de los recursos que tienes para tu retiro.</p>
-                <div className='flex justify-center text-xs text-primary items-center hover:underline hover:underline-offset-2'>
+                <p className='pb-5 text-justify'>Es una prestación que te ofrece la AFORE cuando no estás cotizando al IMSS y te permite hacer un retiro parcial de los recursos que tienes para tu retiro.</p>
+                <div className='flex justify-center text-xs text-primary items-center group hover:underline hover:underline-offset-2'>
                   <Link className='uppercase text-sm font-semibold' href='/tramites#desempleo'>Ir a desempleo</Link>
-                  <ChevronRight className='ml-4' />
+                  <ChevronRight className='ml-4 group-hover:scale-150' />
                 </div>
               </div>
 
               <div className='px-2 pt-3 pb-3 mb-8'>
                 <div className='flex flex-col items-center'>
-                  <Image className='min-h-[31px] max-h-[31px] min-w-[31px] max-w-[31px]' width={31} height={31} src='/icons/preguntas-icon.png' alt='image-preguntas-icon' />
+                  <Image className='min-h-[36px] max-h-[36px] min-w-[36px] max-w-[36px]' width={36} height={36} src='/icons/pensiones-icon.svg' alt='pensiones-icon' />
                   <h1 className='uppercase font-medium pt-2 pb-6'>Pensiones</h1>
                 </div>
-                <p className='pb-3 text-justify'>Es un pago que se da a quienes cumplen edad, semanas y ley. Puede ser por cesantía (60) o vejez (65) en el IMSS, o universal para mayores (68 o 65 indígenas) en el gobierno.</p>
-                <div className='flex justify-center text-xs text-primary items-center hover:underline hover:underline-offset-2'>
+                <p className='pb-5 text-justify'>Es un pago que se da a quienes cumplen edad, semanas y ley. Puede ser por cesantía (60) o vejez (65) en el IMSS, o universal para mayores (68 o 65 indígenas) en el gobierno.</p>
+                <div className='flex justify-center text-xs text-primary items-center group hover:underline hover:underline-offset-2'>
                   <Link className='uppercase text-sm font-semibold' href='/tramites#pensiones'>Ir a pensiones</Link>
-                  <ChevronRight className='ml-4' />
+                  <ChevronRight className='ml-4 group-hover:scale-150' />
                 </div>
               </div>
 
               <div className='px-2 pt-3 pb-3 mb-8'>
                 <div className='flex flex-col items-center'>
-                  <Image className='min-h-[31px] max-h-[31px] min-w-[31px] max-w-[31px]' width={31} height={31} src='/icons/folder-icon.png' alt='image-folder-icon' />
+                  <Image className='min-h-[36px] max-h-[36px] min-w-[36px] max-w-[36px]' width={36} height={36} src='/icons/negativas-icon.svg' alt='negativas-icon' />
                   <h1 className='uppercase font-medium pt-2 pb-6'>Negativas</h1>
                 </div>
-                <p className='pb-3 text-justify'>Es un documento que se emite cuando no cumples con los requisitos para obtener una pensión del IMSS y quieres hacer un retiro total de tu cuenta individual.</p>
-                <div className='flex justify-center text-xs text-primary items-center hover:underline hover:underline-offset-2'>
+                <p className='pb-5 text-justify'>Es un documento que se emite cuando no cumples con los requisitos para obtener una pensión del IMSS y quieres hacer un retiro total de tu cuenta individual.</p>
+                <div className='flex justify-center text-xs text-primary items-center group hover:underline hover:underline-offset-2'>
                   <Link className='uppercase text-sm font-semibold' href='/tramites#negativa'>Ir a negativa</Link>
-                  <ChevronRight className='ml-4' />
+                  <ChevronRight className='ml-4 group-hover:scale-150' />
                 </div>
               </div>
             </div>

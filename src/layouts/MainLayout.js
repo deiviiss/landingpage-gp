@@ -5,6 +5,7 @@ export default function MainLayout({ children }) {
   return (
     <>
       <Navbar />
+
       <main className='mt-24'>
         {children}
       </main>

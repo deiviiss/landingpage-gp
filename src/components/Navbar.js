@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ChevronRight, Menu } from 'react-feather'
 
@@ -81,9 +81,9 @@ export default function Navbar() {
                 <FontAwesomeIcon icon={faFacebook} className='fa-stack-1x w-5 h-5 text-primary hover:text-secondary' />
               </Link>
 
-              <Link href='https://www.facebook.com/GestoriaPeninsularMx'>
+              {/* <Link href='https://www.facebook.com/GestoriaPeninsularMx'>
                 <FontAwesomeIcon icon={faTwitter} className='fa-stack-1x w-5 h-5 text-primary hover:text-secondary' />
-              </Link>
+              </Link> */}
             </div>
           </ul>
         </div>

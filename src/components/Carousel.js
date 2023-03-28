@@ -16,7 +16,7 @@ export default function Carousel({ children: slides, autoSlide = false, autoSlid
   }, [])
 
   return (
-    <div className='overflow-hidden relative'>
+    <div className='max-w-full mx-auto overflow-hidden relative bg-[#2869CD]'>
       <div className='flex transition-transform ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
         {slides}
       </div>
@@ -30,7 +30,7 @@ export default function Carousel({ children: slides, autoSlide = false, autoSlid
         </button>
       </div>
 
-      <div className='absolute top-5 right-0 left-0'>
+      <div className='absolute top-2 right-0 left-0'>
         <div className='flex items-center justify-center gap-2'>
           {
             slides.map((_, i) => (
